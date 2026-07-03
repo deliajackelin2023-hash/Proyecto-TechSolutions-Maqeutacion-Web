@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <h1 class="visually-hidden">Productos - TechSolutions</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="logodetecsolutions.png" alt="TechSolutions logo" class="navbar-logo me-2">
+                <span class="text-primary">Tec</span>Solutions
+            </a>
+            <button id="themeToggle" type="button" class="btn btn-outline-light btn-sm ms-2" aria-label="Cambiar tema">🌙</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="equipo.html">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portafolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-white pb-5">
+                        <h2>Productos</h2>
+                        <p>Tecnología que impulsa tu futuro. Explora nuestra línea de productos innovadores, diseñados para ofrecer calidad, rendimiento y la mejor experiencia en cada compra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-4 gap-2 text-center">
+                <div class="col-auto"><button type="button" class="btn btn-outline-light filter-btn active" data-filter="all">Todos</button></div>
+                <div class="col-auto"><button type="button" class="btn btn-outline-light filter-btn" data-filter="laptops">Laptops</button></div>
+                <div class="col-auto"><button type="button" class="btn btn-outline-light filter-btn" data-filter="pc">PC</button></div>
+                <div class="col-auto"><button type="button" class="btn btn-outline-light filter-btn" data-filter="accesorios">Accesorios</button></div>
+            </div>
+
+            <div class="row">
+                <!-- Laptop -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2 portfolio-card" data-category="laptops">
+                        <div class="card-body text-white animate-on-scroll">
+                            <div class="img-area mb-4">
+                                <img src="Laptop_Pro_X15.jpg" class="img-fluid portfolio-image" alt="Laptop Pro X15" data-title="Laptop Pro X15" data-price="S/ 3,499">
+                            </div>
+                            <h3><strong>Laptop Pro X15</strong></h3>
+                            <p class="lead">Alto rendimiento para trabajo y estudio.</p>
+                            <p class="h6">S/ 3,499</p>
+                            <a href="https://wa.me/933389536" class="btn bg-primary text-white"><span class="bi bi-whatsapp"></span> Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PC -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2 portfolio-card" data-category="pc">
+                        <div class="card-body text-white animate-on-scroll">
+                            <div class="img-area mb-4">
+                                <img src="PC_Gamer_Elite.jpg" class="img-fluid portfolio-image" alt="PC Gamer Elite" data-title="PC Gamer Elite" data-price="S/ 5,299">
+                            </div>
+                            <h3><strong>PC Gamer Elite</strong></h3>
+                            <p class="lead">Equipo potente para gaming y diseño.</p>
+                            <p class="h6">S/ 5,299</p>
+                            <a href="https://wa.me/964110369" class="btn bg-primary text-white"><span class="bi bi-whatsapp"></span> Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitor -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2 portfolio-card" data-category="accesorios">
+                        <div class="card-body text-white animate-on-scroll">
+                            <div class="img-area mb-4">
+                                <img src="Monitor_27_Full_HD.jpg" class="img-fluid portfolio-image" alt="Monitor 27 Full HD" data-title="Monitor 27 Full HD" data-price="S/ 799">
+                            </div>
+                            <h3><strong>Monitor 27" Full HD</strong></h3>
+                            <p class="lead">Pantalla nítida con excelente calidad de imagen.</p>
+                            <p class="h6">S/ 799</p>
+                            <a href="https://wa.me/964110369" class="btn bg-primary text-white"><span class="bi bi-whatsapp"></span> Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teclado -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2 portfolio-card" data-category="accesorios">
+                        <div class="card-body text-white animate-on-scroll">
+                            <div class="img-area mb-4">
+                                <img src="Teclado_RGB.jpg" class="img-fluid portfolio-image" alt="Teclado Mecánico RGB" data-title="Teclado Mecánico RGB" data-price="S/ 229">
+                            </div>
+                            <h3><strong>Teclado Mecánico RGB</strong></h3>
+                            <p class="lead">Precisión, comodidad e iluminación RGB.</p>
+                            <p class="h6">S/ 229</p>
+                            <a href="https://wa.me/964110369" class="btn bg-primary text-white"><span class="bi bi-whatsapp"></span> Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mouse -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2 portfolio-card" data-category="accesorios">
+                        <div class="card-body text-white animate-on-scroll">
+                            <div class="img-area mb-4">
+                                <img src="Mouse_Inalambrico_Pro.jpg" class="img-fluid portfolio-image" alt="Mouse Inalámbrico Pro" data-title="Mouse Inalámbrico Pro" data-price="S/ 99">
+                            </div>
+                            <h3><strong>Mouse Inalámbrico Pro</strong></h3>
+                            <p class="lead">Diseño ergonómico y gran precisión.</p>
+                            <p class="h6">S/ 99</p>
+                            <a href="https://wa.me/964110369" class="btn bg-primary text-white"><span class="bi bi-whatsapp"></span> Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SSD -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2 portfolio-card" data-category="accesorios">
+                        <div class="card-body text-white animate-on-scroll">
+                            <div class="img-area mb-4">
+                                <img src="SSD1.png" class="img-fluid portfolio-image" alt="SSD 1 TB NVMe" data-title="SSD 1 TB NVMe" data-price="S/ 349">
+                            </div>
+                            <h3><strong>SSD 1 TB NVMe</strong></h3>
+                            <p class="lead">Almacenamiento ultrarrápido.</p>
+                            <p class="h6">S/ 349</p>
+                            <a href="https://wa.me/964110369" class="btn bg-primary text-white"><span class="bi bi-whatsapp"></span> Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightboxOverlay" class="d-none">
+        <div class="lightbox-content">
+            <button type="button" class="lightbox-close" aria-label="Cerrar lightbox">×</button>
+            <img id="lightboxImage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Imagen ampliada">
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <footer class="bg-dark py-4">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <p class="text-white mb-1">Ancash: Av. Cabo Alberto Reyes N° 28, Plaza de Armas.</p>
+                    <p class="text-white mb-3">info@tsolperu.com</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/964110369" class="text-white me-3"><span class="bi bi-whatsapp"></span></a>
+                        <a href="https://www.linkedin.com/company/tsol-peru/?skipRedirect=true" class="text-white me-3"><span class="bi bi-linkedin"></span></a>
+                        <a href="https://www.facebook.com/tecsolutionspe/" class="text-white"><span class="bi bi-facebook"></span></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-white small mt-3 mb-0">APSTI @Delia Jackelin Gomero de Paz</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+</body>
+</html>
